@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="create account"
+        android:textSize="30dp"
+        android:gravity="center"
+        android:layout_margin="20dp"/>
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="ID : "/>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/etID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="INPUT ID"
+            />
+    </LinearLayout>
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="PASS : "/>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/etPass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="INPUT PASS"
+            />
+    </LinearLayout>
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="NAME : "/>
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="INPUT NAME"
+            />
+    </LinearLayout>
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="TEL : "/>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/etTel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="INPUT TEL"
+            />
+    </LinearLayout>
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <TextView
+            android:layout_marginTop="20dp"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:text="ADDRESS : "/>
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/etAddr"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="INPUT ADDRESS"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+
+        xmlns:android="http://schemas.android.com/apk/res/android">
+        <Button
+            android:layout_margin="20dp"
+            android:id="@+id/btSubmit"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:textSize="20dp"
+            />
+        <Button
+            android:layout_margin="20dp"
+            android:id="@+id/btCancel"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:textSize="20dp"/>
+    </LinearLayout>
+</LinearLayout>
+
