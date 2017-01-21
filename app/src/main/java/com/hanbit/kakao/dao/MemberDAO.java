@@ -22,7 +22,7 @@ public class MemberDAO extends SQLiteOpenHelper {
     }
     @Override
     public void onCreate(SQLiteDatabase db) {
-        db.execSQL("CREATE TABLE IF NOT EXIST Member(\n" +
+        db.execSQL("CREATE TABLE IF NOT EXISTS Member(\n" +
                 "\tid TEXT PRIMARY KEY,\n" +
                 "    pw TEXT,\n" +
                 "    name TEXT,\n" +
@@ -34,7 +34,7 @@ public class MemberDAO extends SQLiteOpenHelper {
                 "\n" +
                 "\n" +
                 "        ");
-        db.execSQL("CREATE TABLE Message(\n" +
+        db.execSQL("CREATE TABLE IF NOT EXISTS Message(\n" +
                 " _id INTEGER PRIMARY KEY AUTOINCREMENT,\n" +
                 "sender TEXT,\n" +
                 "receier TEXT,\n" +
@@ -45,15 +45,15 @@ public class MemberDAO extends SQLiteOpenHelper {
                 ");");
 
         db.execSQL("INSERT INTO Member(id, pw, name, email, phone, photo, addr)\n" +
-                "VALUES('hong','1','홍길동','hong@test.com','010-2059-9738','default.jpg','서울');");
+                "VALUES('hong','1','홍길동','hong@test.com','010-2059-9738','default_profile','서울');");
         db.execSQL("INSERT INTO Member(id, pw, name, email, phone, photo, addr)\n" +
-                "VALUES('hong','1','김김김','hong@test.com','010-2000-9738','default.jpg','서울');");
+                "VALUES('kim','1','김김김','hong@test.com','010-2000-9738','default_profile','서울');");
         db.execSQL("INSERT INTO Member(id, pw, name, email, phone, photo, addr)\n" +
-                "VALUES('hong','1','박박박','hong@test.com','010-20001-9738','default.jpg','서울');");
+                "VALUES('park','1','박박박','hong@test.com','010-20001-9738','default_profile','서울');");
         db.execSQL("INSERT INTO Member(id, pw, name, email, phone, photo, addr)\n" +
-                "VALUES('hong','1','이이이','hong@test.com','010-2002-9738','default.jpg','서울');");
+                "VALUES('lee','1','이이이','hong@test.com','010-2002-9738','default_profile','서울');");
         db.execSQL("INSERT INTO Member(id, pw, name, email, phone, photo, addr)\n" +
-                "VALUES('hong','1','전전전','hong@test.com','010-2333-9738','default.jpg','서울');");
+                "VALUES('jeon','1','전전전','hong@test.com','010-2333-9738','default_profile','서울');");
 
     }
 
